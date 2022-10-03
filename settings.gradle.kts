@@ -1,3 +1,3 @@
 
-rootProject.name = "FoodReviewApp"
+rootProject.name = "placemark-console"
 
