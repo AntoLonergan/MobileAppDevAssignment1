@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Function Replacing prints in Menu.">
+    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Simple Food Review data.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/main/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/main/main.kt" afterDir="false" />
     </list>
@@ -20,6 +20,14 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -122,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665246536974</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Simple Food Review data.">
+      <created>1665250279565</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665250279565</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +189,7 @@
     <MESSAGE value="Simple Main and test of git." />
     <MESSAGE value="Very Basic Menu." />
     <MESSAGE value="Function Replacing prints in Menu." />
-    <option name="LAST_COMMIT_MESSAGE" value="Function Replacing prints in Menu." />
+    <MESSAGE value="Simple Food Review data." />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple Food Review data." />
   </component>
 </project>

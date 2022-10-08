@@ -1,19 +1,12 @@
 package food.review.app.console.main
 
+import food.review.app.console.models.FoodReviewModel
 import mu.KotlinLogging
 import java.awt.SystemColor.menu
 
 private val logger = KotlinLogging.logger {}
 
-var name = ""
-var address = ""
-var postCode = ""
-var justEatRating = ""
-var items = ""
-var price = ""
-var comments = ""
-var myRating = ""
-var recommend = ""
+var foodReview = ArrayList<FoodReviewModel>()
 
 fun main(args: Array<String>) {
     println("Food Review Kotlin App by Anthony Lonergan")
@@ -59,65 +52,62 @@ fun addReview(){
     println("Add Review")
     println()
     print("Enter Restaurant Name : ")
-    name = readLine()!!
+    foodReview.name = readLine()!!
     print("Enter their address : ")
-    address = readLine()!!
+    foodReview.address = readLine()!!
     print("Enter their PostCode : ")
-    postCode = readLine()!!
+    foodReview.postCode = readLine()!!
     print("Enter their JustEat rating : ")
-    justEatRating = readLine()!!
+    foodReview.justEatRating = readLine()!!.toDouble()
     print("Enter your items bought : ")
-    items = readLine()!!
+    foodReview.items = readLine()!!
     print("Enter the price paid : ")
-    price = readLine()!!
+    foodReview.price = readLine()!!.toDouble()
     print("Enter your Comments : ")
-    comments = readLine()!!
+    foodReview.comments = readLine()!!
     print("Enter your Rating. : ")
-    myRating = readLine()!!
-    print("Enter Yes or No to Recommend. : ")
-    recommend = readLine()!!
-    println("You entered [ $name ] for name " +
-            "[ $address ] for address " +
-            "[ $postCode ] for post code " +
-            "[ $justEatRating ] for Just Eat Rating " +
-            "[ $items ] for items " +
-            "[ $price ] for price" +
-            "[ $comments ] for comments" +
-            "[ $myRating ] for your Rating" +
-            "[ $recommend ] for would you recommend")
+    foodReview.myRating = readLine()!!.toInt()
+    println("You entered [ " + foodReview.name + " ] for name " +
+            "[ " + foodReview.address + " ] for address " +
+            "[ " + foodReview.postCode + " ] for post code " +
+            "[ " + foodReview.justEatRating + " ] for Just Eat Rating " +
+            "[ " + foodReview.items + " ] for items " +
+            "[ " + foodReview.price + " ] for price" +
+            "[ " + foodReview.comments + " ] for comments" +
+            "[ " + foodReview.myRating + " ] for your Rating")
+
 }
 
 fun updateReview() {
     println("You Chose to Update Review")
     print("Enter a new name for Restaurant Name : ")
-    name = readLine()!!
+    foodReview.name = readLine()!!
     print("Enter a new address for their address : ")
-    address = readLine()!!
+    foodReview.address = readLine()!!
     print("Enter a new post code for their PostCode : ")
-    postCode = readLine()!!
+    foodReview.postCode = readLine()!!
     print("Enter a new Just eat rating for their JustEat rating : ")
-    justEatRating = readLine()!!
+    foodReview.justEatRating = readLine()!!.toDouble()
     print("Enter new items for your items bought : ")
-    items = readLine()!!
+    foodReview.items = readLine()!!
     print("Enter new price for the price paid : ")
-    price = readLine()!!
+    foodReview.price = readLine()!!.toDouble()
     print("Enter new comments for your Comments : ")
-    comments = readLine()!!
+    foodReview.comments = readLine()!!
     print("Enter new ratings for your Rating. : ")
-    myRating = readLine()!!
-    print("Enter a new answer to Yes or No to Recommend. : ")
-    recommend = readLine()!!
-    println("You entered [ $name ] for new name " +
-            "[ $address ] for new address " +
-            "[ $postCode ] for new post code " +
-            "[ $justEatRating ] for new Just Eat Rating " +
-            "[ $items ] for new items " +
-            "[ $price ] for new price" +
-            "[ $comments ] for new comments" +
-            "[ $myRating ] for new your Rating" +
-            "[ $recommend ] for new would you recommend")
+    foodReview.myRating = readLine()!!.toInt()
+    println("You entered [ " + foodReview.name + " ] for new name " +
+            "[ " +foodReview.address + " ] for new address " +
+            "[ " + foodReview.postCode + " ] for new post code " +
+            "[ " + foodReview.justEatRating + " ] for new Just Eat Rating " +
+            "[ " + foodReview.items + " ] for new items " +
+            "[ " + foodReview.price + " ] for new price" +
+            "[ " + foodReview.comments + " ] for new comments" +
+            "[ " + foodReview.myRating + " ] for new your Rating")
 }
 
 fun listReview() {
-    println("You Chose to List All Reviews")
+    println("List All Reviewed Restaurants")
+    println()
+    foodReview.forEach { logger.info("${it}") }
 }
