@@ -14,7 +14,9 @@ fun main(args: Array<String>) {
     do {
         input = menu()
         when(input) {
-            1 -> println("You Chose Add Restaurant")
+            1 -> addReview()
+            2 -> updateReview()
+            3 -> listReview()
             -1 -> println("Exiting App")
             else -> println("Invalid Option")
         }
@@ -41,5 +43,16 @@ fun menu() : Int {
     else
         -9
     return option
+}
 
+fun addReview(){
+    println("You Chose to add a Review")
+}
+
+fun updateReview() {
+    println("You Chose to Update Review")
+}
+
+fun listReview() {
+    println("You Chose to List All Reviews")
 }
