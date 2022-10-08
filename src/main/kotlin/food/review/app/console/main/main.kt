@@ -1,12 +1,11 @@
 package food.review.app.console.main
 
-import food.review.app.console.models.FoodReviewModel
 import mu.KotlinLogging
-import java.awt.SystemColor.menu
+import food.review.app.console.models.FoodReviewModel
 
 private val logger = KotlinLogging.logger {}
 
-var foodReview = ArrayList<FoodReviewModel>()
+val foodReviews = ArrayList<FoodReviewModel>()
 
 fun main(args: Array<String>) {
     println("Food Review Kotlin App by Anthony Lonergan")
@@ -31,83 +30,119 @@ fun main(args: Array<String>) {
 fun menu() : Int {
 
     var option : Int
-    var input: String? = null
+    var input: String?
 
-    println("Main Menu")
-    println(" 1. Add Restaurant Review")
-    println(" 2. Update Restaurant Review")
-    println(" 3. List All Previously Reviewed Restauraunts")
+    println("MAIN MENU")
+    println(" 1. Add Placemark")
+    println(" 2. Update Placemark")
+    println(" 3. List All Placemarks")
     println("-1. Exit")
     println()
-    print("Enter an integer : ")
+    print("Enter Option : ")
     input = readLine()!!
     option = if (input.toIntOrNull() != null && !input.isEmpty())
         input.toInt()
+
     else
         -9
     return option
 }
 
 fun addReview(){
-    println("Add Review")
+    var aFoodReview = FoodReviewModel()
+    println("Add Placemark")
     println()
     print("Enter Restaurant Name : ")
-    foodReview.name = readLine()!!
+    aFoodReview.name = readLine()!!
     print("Enter their address : ")
-    foodReview.address = readLine()!!
+    aFoodReview.address = readLine()!!
     print("Enter their PostCode : ")
-    foodReview.postCode = readLine()!!
+    aFoodReview.postCode = readLine()!!
     print("Enter their JustEat rating : ")
-    foodReview.justEatRating = readLine()!!.toDouble()
+    aFoodReview.justEatRating = readLine()!!.toDouble()
     print("Enter your items bought : ")
-    foodReview.items = readLine()!!
+    aFoodReview.items = readLine()!!
     print("Enter the price paid : ")
-    foodReview.price = readLine()!!.toDouble()
+    aFoodReview.price = readLine()!!.toDouble()
     print("Enter your Comments : ")
-    foodReview.comments = readLine()!!
+    aFoodReview.comments = readLine()!!
     print("Enter your Rating. : ")
-    foodReview.myRating = readLine()!!.toInt()
-    println("You entered [ " + foodReview.name + " ] for name " +
-            "[ " + foodReview.address + " ] for address " +
-            "[ " + foodReview.postCode + " ] for post code " +
-            "[ " + foodReview.justEatRating + " ] for Just Eat Rating " +
-            "[ " + foodReview.items + " ] for items " +
-            "[ " + foodReview.price + " ] for price" +
-            "[ " + foodReview.comments + " ] for comments" +
-            "[ " + foodReview.myRating + " ] for your Rating")
+    aFoodReview.myRating = readLine()!!.toInt()
 
+    if (aFoodReview.name.isNotEmpty() &&
+        aFoodReview.address.isNotEmpty() &&
+        aFoodReview.postCode.isNotEmpty() &&
+        aFoodReview.items.isNotEmpty() &&
+        aFoodReview.comments.isNotEmpty())
+    {
+        foodReviews.add(aFoodReview.copy())
+        logger.info("Restaurant Review Added : [ $aFoodReview ]")
+    }
+    else
+        logger.info("Placemark Not Added")
 }
 
 fun updateReview() {
     println("You Chose to Update Review")
+    listReview()
+    var searchId = getId()
+    val aFoodReview = search(searchId)
     print("Enter a new name for Restaurant Name : ")
-    foodReview.name = readLine()!!
+    aFoodReview.name = readLine()!!
     print("Enter a new address for their address : ")
-    foodReview.address = readLine()!!
+    aFoodReview.address = readLine()!!
     print("Enter a new post code for their PostCode : ")
-    foodReview.postCode = readLine()!!
+    aFoodReview.postCode = readLine()!!
     print("Enter a new Just eat rating for their JustEat rating : ")
-    foodReview.justEatRating = readLine()!!.toDouble()
+    aFoodReview.justEatRating = readLine()!!.toDouble()
     print("Enter new items for your items bought : ")
-    foodReview.items = readLine()!!
+    aFoodReview.items = readLine()!!
     print("Enter new price for the price paid : ")
-    foodReview.price = readLine()!!.toDouble()
+    aFoodReview.price = readLine()!!.toDouble()
     print("Enter new comments for your Comments : ")
-    foodReview.comments = readLine()!!
+    aFoodReview.comments = readLine()!!
     print("Enter new ratings for your Rating. : ")
-    foodReview.myRating = readLine()!!.toInt()
-    println("You entered [ " + foodReview.name + " ] for new name " +
-            "[ " +foodReview.address + " ] for new address " +
-            "[ " + foodReview.postCode + " ] for new post code " +
-            "[ " + foodReview.justEatRating + " ] for new Just Eat Rating " +
-            "[ " + foodReview.items + " ] for new items " +
-            "[ " + foodReview.price + " ] for new price" +
-            "[ " + foodReview.comments + " ] for new comments" +
-            "[ " + foodReview.myRating + " ] for new your Rating")
+    aFoodReview.myRating = readLine()!!.toInt()
+    println("You entered [ " + aFoodReview.name + " ] for new name " +
+            "[ " +aFoodReview.address + " ] for new address " +
+            "[ " + aFoodReview.postCode + " ] for new post code " +
+            "[ " + aFoodReview.justEatRating + " ] for new Just Eat Rating " +
+            "[ " + aFoodReview.items + " ] for new items " +
+            "[ " + aFoodReview.price + " ] for new price" +
+            "[ " + aFoodReview.comments + " ] for new comments" +
+            "[ " + aFoodReview.myRating + " ] for new your Rating")
 }
 
 fun listReview() {
-    println("List All Reviewed Restaurants")
+    println("List All Placemarks")
     println()
-    foodReview.forEach { logger.info("${it}") }
+    foodReviews.forEach { logger.info("${it}") }
+
+    fun searchFoodReview() {
+
+        var searchId = getId()
+        val aFoodReview = search(searchId)
+
+        if(aFoodReview != null)
+            println("Food Review Details [ $aFoodReview ]")
+        else
+            println("Food Review Not Found...")
+    }
+}
+
+fun getId() : Long {
+    var strId : String? // String to hold user input
+    var searchId : Long // Long to hold converted id
+    print("Enter id to Search/Update : ")
+    strId = readLine()!!
+    searchId = if (strId.toLongOrNull() != null && !strId.isEmpty())
+        strId.toLong()
+    else
+        -9
+    return searchId
+}
+
+fun search(id: Long) : FoodReviewModel? {
+    var foundReviews: FoodReviewModel? = foodReviews.find { p -> p.id == id }
+    return foundReviews
 }
