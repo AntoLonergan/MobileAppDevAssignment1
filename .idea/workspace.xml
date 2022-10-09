@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Food Review Store added.">
+    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Switched to the controller and temporary memory">
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/main/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/main/main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +36,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Assignment1.zip/Assignment1/src/main/kotlin/com/example/Styles.kt" root0="SKIP_INSPECTION" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Assignment1.zip/Assignment1/src/main/kotlin/com/example/model/Product.kt" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -165,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665257995266</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Switched to the controller and temporary memory">
+      <created>1665261812543</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665261812543</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +225,7 @@
     <MESSAGE value="Collection Class." />
     <MESSAGE value="Some further changes to model." />
     <MESSAGE value="Food Review Store added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Food Review Store added." />
+    <MESSAGE value="Switched to the controller and temporary memory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Switched to the controller and temporary memory" />
   </component>
 </project>
