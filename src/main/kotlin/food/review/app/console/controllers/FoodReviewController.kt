@@ -24,9 +24,9 @@ class FoodReviewController {
             when (input) {
                 1 -> add()
                 2 -> update()
-                3 -> list()
-                4 -> search()
-                -99 -> dummyData()
+                3 -> delete()
+                4 -> list()
+                5 -> search()
                 -1 -> println("Exiting App")
                 else -> println("Invalid Option")
             }
@@ -69,6 +69,20 @@ class FoodReviewController {
             println("Food Review Not Updated...")
     }
 
+    fun delete() {
+        foodReviewView.listFoodReviews(foodReviews)
+        var searchId = foodReviewView.getId()
+        val aFoodReview = search(searchId)
+
+        if(aFoodReview != null) {
+            foodReviews.delete(aFoodReview)
+            println("Food Review Deleted...")
+            foodReviewView.listFoodReviews(foodReviews)
+        }
+        else
+            println("Food Reviews Not Deleted...")
+    }
+
     fun search() {
         val aFoodReview = search(foodReviewView.getId())!!
         foodReviewView.showFoodReviews(aFoodReview)
@@ -80,7 +94,4 @@ class FoodReviewController {
         return foundFoodReviews
     }
 
-    fun dummyData() {
-
-    }
 }

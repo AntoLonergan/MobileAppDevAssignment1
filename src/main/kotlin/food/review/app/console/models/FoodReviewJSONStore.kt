@@ -58,6 +58,11 @@ class FoodReviewJSONStore : FoodReviewStore {
         serialize()
     }
 
+    override fun delete(foodReview: FoodReviewModel) {
+        foodReviews.remove(foodReview)
+        serialize()
+    }
+
     internal fun logAll() {
         foodReviews.forEach { logger.info("${it}") }
     }

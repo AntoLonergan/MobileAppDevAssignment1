@@ -8,15 +8,18 @@ class FoodReviewView {
 
         var option: Int
         var input: String? = null
+        println()
 
         println("Main Menu")
         println(" 1. Add Restaurant Review")
         println(" 2. Update Restaurant Review")
-        println(" 3. List All Previously Reviewed Restauraunts")
-        println(" 4. Search Reviews")
+        println(" 3. Delete Restaurant Review")
+        println(" 4. List All Previously Reviewed Restauraunts")
+        println(" 5. Search Reviews")
         println("-1. Exit")
         println()
         print("Enter an integer : ")
+
         input = readLine()!!
         option = if (input.toIntOrNull() != null && !input.isEmpty())
             input.toInt()
@@ -25,9 +28,8 @@ class FoodReviewView {
         return option
     }
     fun listFoodReviews(foodReviews : FoodReviewJSONStore) {
-        println("List All Food Reviews")
-        println()
         foodReviews.logAll()
+        println("List All Food Reviews")
         println()
     }
 
@@ -48,15 +50,15 @@ class FoodReviewView {
         print("Enter their PostCode : eg (X42 DY45)")
         foodReview.postCode = readLine()!!
         print("Enter their JustEat rating : eg (8.75)")
-        foodReview.justEatRating = readLine()!!.toDouble()
+        foodReview.justEatRating = readLine()!!.toDoubleOrNull() ?: 0.0
         print("Enter your items bought : eg (Burger, Chips, Chicken Wings.)")
         foodReview.items = readLine()!!
         print("Enter the price paid : eg (10.75)")
-        foodReview.price = readLine()!!.toDouble()
+        foodReview.price = readLine()!!.toDoubleOrNull() ?: 0.0
         print("Enter your Comments : eg (Very Tasty, Good Value)")
         foodReview.comments = readLine()!!
         print("Enter your Rating. : eg (9) ")
-        foodReview.myRating = readLine()!!.toInt()
+        foodReview.myRating = readLine()!!.toIntOrNull() ?: 0
 
         return foodReview.name.isNotEmpty() &&
                 foodReview.address.isNotEmpty() &&
@@ -84,15 +86,15 @@ class FoodReviewView {
         print("Enter a new post code for their PostCode : eg(X42 DY45) ")
         tempPostCode = readLine()!!
         print("Enter a new Just eat rating for their JustEat rating : eg(8.75) ")
-        tempJustEatRating = readLine()!!.toDouble()
+        tempJustEatRating = readLine()!!.toDoubleOrNull() ?: 0.0
         print("Enter new items for your items bought : eg(Burger, Chips, Chicken Wings.)")
         tempItems = readLine()!!
         print("Enter new price for the price paid : eg(10.75)")
-        tempPrice = readLine()!!.toDouble()
+        tempPrice = readLine()!!.toDoubleOrNull()?: 0.0
         print("Enter new comments for your Comments : eg(Very Tasty, Good Value)")
         tempComments = readLine()!!
         print("Enter new ratings for your Rating. : eg(9)")
-        tempMyRating = readLine()!!.toInt()
+        tempMyRating = readLine()!!.toIntOrNull() ?: 0
 
         if (tempName.isNotEmpty() &&
             tempAddress.isNotEmpty() &&

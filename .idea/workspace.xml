@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Switched to the controller and temporary memory">
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Added JSON Persistance.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodReviews.json" beforeDir="false" afterPath="$PROJECT_DIR$/foodReviews.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/controllers/FoodReviewController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/controllers/FoodReviewController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewJSONStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewJSONStore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewStore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/views/FoodReviewView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/views/FoodReviewView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665261812543</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added JSON Persistance.">
+      <created>1665323910959</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665323910959</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +237,7 @@
     <MESSAGE value="Some further changes to model." />
     <MESSAGE value="Food Review Store added." />
     <MESSAGE value="Switched to the controller and temporary memory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Switched to the controller and temporary memory" />
+    <MESSAGE value="Added JSON Persistance." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added JSON Persistance." />
   </component>
 </project>

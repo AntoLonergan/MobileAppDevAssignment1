@@ -5,4 +5,5 @@ interface FoodReviewStore {
     fun findOne(id: Long): FoodReviewModel?
     fun create(foodReview: FoodReviewModel)
     fun update(foodReview: FoodReviewModel)
+    fun delete(foodReview: FoodReviewModel)
 }
