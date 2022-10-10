@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Attempted to add connection to MySQL with jdbc">
+    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Started trying to implement TornadoFx">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/MainView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/helpers/DataReview.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/helpers/Database.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/app/MyApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/app/MyApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/MyView.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665419976693</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Started trying to implement TornadoFx">
+      <created>1665423504921</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665423504921</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -352,7 +360,8 @@
     <MESSAGE value="Added JSON Persistance." />
     <MESSAGE value="Added Validation for int and double inputs" />
     <MESSAGE value="Attempted to add connection to MySQL with jdbc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempted to add connection to MySQL with jdbc" />
+    <MESSAGE value="Started trying to implement TornadoFx" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started trying to implement TornadoFx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
