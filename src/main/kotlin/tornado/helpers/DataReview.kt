@@ -55,9 +55,9 @@ class DataReview{
         conn.close()
     }
 
-    fun updateProduct(id:Long, foodReview: FoodReviewModel):FoodReviewModel{
+    fun updateFoodReview(id:Long, foodReview: FoodReviewModel):FoodReviewModel{
         val conn = Database().conn
-        val ps = conn.prepareStatement("update product name = ? ,address = ? ,postCode = ? ,justEatRating = ?,items = ?,price = ?,comments = ?,myRating = ?where id = ?")
+        val ps = conn.prepareStatement("update data name = ? ,address = ? ,postCode = ? ,justEatRating = ?,items = ?,price = ?,comments = ?,myRating = ?where id = ?")
         ps.setLong(1,id)
         ps.setString(2,foodReview.name)
         ps.setString(3,foodReview.address)
@@ -73,7 +73,7 @@ class DataReview{
         return foodReview
     }
 
-    fun searchProduct(id: Long):List<FoodReviewModel>{
+    fun searchFoodReview(id: Long):List<FoodReviewModel>{
         println(id)
         val conn = Database().conn
         val ps = conn.prepareStatement("select * from data where id like ?")
