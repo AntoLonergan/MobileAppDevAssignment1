@@ -57,7 +57,7 @@ class FoodReviewView {
         foodReview.price = readLine()!!.toDoubleOrNull() ?: 0.0
         print("Enter your Comments : eg (Very Tasty, Good Value)")
         foodReview.comments = readLine()!!
-        print("Enter your Rating. : eg (9) ")
+        print("Enter your Rating as a Whole Number (0-10)   : eg (9) ")
         foodReview.myRating = readLine()!!.toIntOrNull() ?: 0
 
         return foodReview.name.isNotEmpty() &&
