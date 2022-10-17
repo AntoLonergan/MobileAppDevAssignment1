@@ -4,7 +4,7 @@ import javafx.scene.paint.Color
 import tornadofx.*
 
 class DeleteView : View() {
-    override val root = vbox {
+    override val root = vbox(60) {
         label("Delete View") {
             textFill = Color.BLUE
         }
@@ -15,34 +15,6 @@ class DeleteView : View() {
                 replaceWith<MainView>()
                 println("Going to Main Menu!")
             }
-
-        }
-
-        button("Go to Add View") {
-            textFill = Color.RED
-            action {
-                replaceWith<AddView>()
-                println("Going to Add View!")
-            }
-
-        }
-        button("Go to Update View") {
-            textFill = Color.RED
-            action {
-                replaceWith<UpdateView>()
-                println("Going to Update View!")
-
-            }
-
-        }
-
-        button("Go to List Views") {
-            textFill = Color.RED
-            action {
-                replaceWith<ListView>()
-                println("Going to ListViews!")
-            }
-
         }
     }
 }

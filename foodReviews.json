@@ -20,5 +20,16 @@
     "price": 0.0,
     "comments": "a",
     "myRating": 0
+  },
+  {
+    "id": -3586500837512311458,
+    "name": "Supermacs",
+    "address": "Wexford",
+    "postCode": "X42823",
+    "justEatRating": 7.86,
+    "items": "Chicken Wings",
+    "price": 11.65,
+    "comments": "Great",
+    "myRating": 8
   }
 ]

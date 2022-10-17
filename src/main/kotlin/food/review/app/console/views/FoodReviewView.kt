@@ -16,6 +16,8 @@ class FoodReviewView {
         println(" 3. Delete Restaurant Review")
         println(" 4. List All Previously Reviewed Restauraunts")
         println(" 5. Search Reviews")
+        println(" 6. Display all Reviewed Restaurants")
+        println(" 7. Sort by Ratings")
         println("-1. Exit")
         println()
         print("Enter an integer : ")
@@ -34,11 +36,9 @@ class FoodReviewView {
     }
 
     fun showFoodReviews(foodReview : FoodReviewModel) {
-        if(foodReview != null)
-            println("Food Review Details [ $foodReview ]")
-        else
-            println("FoodReview Not Found...")
+        println("Food Review Details [ $foodReview ]")
     }
+
 
     fun addFoodReviewData(foodReview : FoodReviewModel) : Boolean {
 

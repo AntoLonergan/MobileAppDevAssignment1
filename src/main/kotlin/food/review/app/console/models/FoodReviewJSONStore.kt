@@ -3,12 +3,10 @@ package food.review.app.console.models
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
-import mu.KotlinLogging
-
-import food.review.app.console.helpers.*
 import food.review.app.console.helpers.exists
 import food.review.app.console.helpers.read
 import food.review.app.console.helpers.write
+import mu.KotlinLogging
 import java.util.*
 
 private val logger = KotlinLogging.logger {}
@@ -47,7 +45,7 @@ class FoodReviewJSONStore : FoodReviewStore {
     }
 
     override fun update(foodReview: FoodReviewModel) {
-        var foundFoodReview = findOne(foodReview.id!!)
+        val foundFoodReview = findOne(foodReview.id)
         if (foundFoodReview != null) {
             foundFoodReview.name = foodReview.name
             foundFoodReview.address = foodReview.address
@@ -66,6 +64,7 @@ class FoodReviewJSONStore : FoodReviewStore {
         serialize()
     }
 
+
     internal fun logAll() {
         foodReviews.forEach { logger.info("${it}") }
     }
@@ -79,4 +78,19 @@ class FoodReviewJSONStore : FoodReviewStore {
         val jsonString = read(JSON_FILE)
         foodReviews = Gson().fromJson(jsonString, listType)
     }
+
+    internal fun restaurants(){
+        foodReviews.forEach { logger.info(it.name) }
+    }
+
+    internal fun sort() {
+        val ratings = mutableListOf<FoodReviewModel>()
+        foodReviews.forEach {
+            ratings.add(it)
+        }
+        ratings.sortWith(compareBy { it.myRating })
+        println(ratings)
+    }
+
+
 }

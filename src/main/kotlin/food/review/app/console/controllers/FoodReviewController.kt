@@ -1,9 +1,9 @@
 package food.review.app.console.controllers
 
 import food.review.app.console.models.FoodReviewJSONStore
-import mu.KotlinLogging
 import food.review.app.console.models.FoodReviewModel
 import food.review.app.console.views.FoodReviewView
+import mu.KotlinLogging
 
 class FoodReviewController {
 
@@ -27,6 +27,8 @@ class FoodReviewController {
                 3 -> delete()
                 4 -> list()
                 5 -> search()
+                6 -> restaurants()
+                7 -> sort()
                 -1 -> println("Exiting App")
                 else -> println("Invalid Option")
             }
@@ -81,6 +83,15 @@ class FoodReviewController {
         }
         else
             println("Food Reviews Not Deleted...")
+    }
+
+
+    fun restaurants(){
+        foodReviews.restaurants()
+    }
+
+    fun sort(){
+        foodReviews.sort()
     }
 
     fun search() {

@@ -6,4 +6,5 @@ interface FoodReviewStore {
     fun create(foodReview: FoodReviewModel)
     fun update(foodReview: FoodReviewModel)
     fun delete(foodReview: FoodReviewModel)
+
 }

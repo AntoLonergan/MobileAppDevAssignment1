@@ -1,13 +1,10 @@
 package tornado.views
 
-import javafx.scene.control.TextField
 import javafx.scene.paint.Color
 import tornadofx.*
 
 class UpdateView : View() {
-    var firstNameField: TextField by singleAssign()
-    var lastNameField: TextField by singleAssign()
-    override val root = hbox {
+    override val root = vbox(60){
         label("Update View") {
             textFill = Color.BLUE
         }
@@ -19,28 +16,5 @@ class UpdateView : View() {
             }
         }
 
-        button("Go to Add View") {
-            textFill = Color.RED
-            action {
-                replaceWith<AddView>()
-                println("Going to AddView!")
-            }
-        }
-
-        button("Go to Delete View") {
-            textFill = Color.RED
-            action {
-                replaceWith<DeleteView>()
-                println("Going to Delete View!")
-            }
-        }
-
-        button("Go to List Views") {
-            textFill = Color.RED
-            action {
-                replaceWith<ListView>()
-                println("Going to ListViews!")
-            }
-        }
     }
 }
