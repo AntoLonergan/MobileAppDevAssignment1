@@ -243,13 +243,13 @@
   },
   {
     "id": -5369010308403371990,
-    "name": "T",
-    "address": "T",
-    "postCode": "T",
-    "justEatRating": 7.0,
-    "items": "T",
-    "price": 8.0,
-    "comments": "T",
-    "myRating": 2
+    "name": "A",
+    "address": "A",
+    "postCode": "A",
+    "justEatRating": 2.0,
+    "items": "A",
+    "price": 2.0,
+    "comments": "A",
+    "myRating": 0
   }
 ]

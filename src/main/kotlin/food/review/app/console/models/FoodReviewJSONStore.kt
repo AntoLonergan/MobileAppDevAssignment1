@@ -21,7 +21,7 @@ fun generateRandomId(): Long {
 
 class FoodReviewJSONStore : FoodReviewStore {
 
-    var foodReviews = mutableListOf<FoodReviewModel>()
+    private var foodReviews = mutableListOf<FoodReviewModel>()
 
     init {
         if (exists(JSON_FILE)) {
