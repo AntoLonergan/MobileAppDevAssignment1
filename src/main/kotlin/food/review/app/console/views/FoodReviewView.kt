@@ -68,6 +68,10 @@ class FoodReviewView {
                 foodReview.comments.isNotEmpty()
     }
 
+
+
+
+
     fun updateFoodReviewData(foodReview : FoodReviewModel) : Boolean {
 
         val tempName: String?

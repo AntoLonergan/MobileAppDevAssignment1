@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Added sorting and added more fx">
+    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="List View Tornado working.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/controllers/FoodReviewController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/controllers/FoodReviewController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewJSONStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewJSONStore.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/ListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/ListView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodReviews.json" beforeDir="false" afterPath="$PROJECT_DIR$/foodReviews.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/views/FoodReviewView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/views/FoodReviewView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/AddView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/AddView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666047113227</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="List View Tornado working.">
+      <created>1666106642712</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1666106642712</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,7 +384,8 @@
     <MESSAGE value="Started trying to implement TornadoFx" />
     <MESSAGE value="Added Landing page to TornadoFX" />
     <MESSAGE value="Added sorting and added more fx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added sorting and added more fx" />
+    <MESSAGE value="List View Tornado working." />
+    <option name="LAST_COMMIT_MESSAGE" value="List View Tornado working." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
