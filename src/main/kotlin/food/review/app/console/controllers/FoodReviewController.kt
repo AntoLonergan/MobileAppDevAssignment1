@@ -11,6 +11,7 @@ class FoodReviewController {
     val foodReviewView = FoodReviewView()
     val logger = KotlinLogging.logger {}
 
+
     init {
         logger.info { "Launching Food Review Console App" }
         println("Food Review Kotlin App by Anthony Lonergan")

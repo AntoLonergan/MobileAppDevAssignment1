@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Added Landing page to TornadoFX">
+    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Added sorting and added more fx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodReviews.json" beforeDir="false" afterPath="$PROJECT_DIR$/foodReviews.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/controllers/FoodReviewController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/controllers/FoodReviewController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewJSONStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewJSONStore.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewStore.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/views/FoodReviewView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/views/FoodReviewView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/app/MyApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/app/MyApp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/styles/Styles.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/styles/Styles.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/AddView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/AddView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/DeleteView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/DeleteView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/ListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/ListView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/MainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/MainView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/UpdateView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/UpdateView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +118,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="Kotlin.MyAppKt">
     <configuration name="Unnamed" type="JarApplication" nameIsGenerated="true">
       <option name="JAR_PATH" value="$USER_HOME$/Downloads/tornadofx-1.7.20.jar" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Loner\IdeaProjects\FoodReviewApp" />
@@ -179,8 +170,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.MyAppKt" />
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.MyAppKt (1)" />
         <item itemvalue="Kotlin.Database" />
         <item itemvalue="Kotlin.MySQLDatabaseExampleKotlin (1)" />
@@ -315,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665428632227</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added sorting and added more fx">
+      <created>1666047113227</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1666047113227</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -378,7 +376,8 @@
     <MESSAGE value="Attempted to add connection to MySQL with jdbc" />
     <MESSAGE value="Started trying to implement TornadoFx" />
     <MESSAGE value="Added Landing page to TornadoFX" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Landing page to TornadoFX" />
+    <MESSAGE value="Added sorting and added more fx" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sorting and added more fx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -2,11 +2,12 @@ package tornado.views
 
 import food.review.app.console.models.FoodReviewJSONStore
 import food.review.app.console.models.FoodReviewModel
-import food.review.app.console.views.FoodReviewView
 import javafx.scene.paint.Color
 import tornadofx.*
 
 class ListView : View() {
+    val foodReviews = FoodReviewJSONStore()
+    val reviews = SortedFilteredList(items = foodReviews.list().asObservable())
     override val root = vbox(50) {
         label("List View") {
             textFill = Color.BLUE
@@ -18,21 +19,73 @@ class ListView : View() {
                 println("Going to Main Menu!")
             }
         }
+        tableview<FoodReviewModel> {
+            items = reviews
+            columnResizePolicy = SmartResize.POLICY
 
-            tableview {
-
-                column("ID", FoodReviewModel::id)
-                column("Name", FoodReviewModel::name)
-                column("Address", FoodReviewModel::address)
-                column("PostCode", FoodReviewModel::address)
-                column("Just Eat Rating", FoodReviewModel::justEatRating)
-                column("PostCode", FoodReviewModel::postCode)
-                column("Items", FoodReviewModel::items)
-                column("Price", FoodReviewModel::price)
-                column("Comments", FoodReviewModel::comments)
-                column("My Rating", FoodReviewModel::myRating)
+            column("ID", Long::class) {
+                value {
+                    it.value.id
+                }
+                remainingWidth()
             }
-        FoodReviewView().listFoodReviews(foodReviews = FoodReviewJSONStore())
+
+
+            column("Name", String::class) {
+                value {
+                    it.value.name
+                }
+                remainingWidth()
+            }
+            column("Address", String::class) {
+                value {
+                    it.value.address
+                }
+                remainingWidth()
+            }
+            column("Postcode", String::class) {
+                value {
+                    it.value.postCode
+                }
+                remainingWidth()
+            }
+            column("JustEatRating", Double::class) {
+                value {
+                    it.value.justEatRating
+                }
+                remainingWidth()
+            }
+
+            column("Items", String::class) {
+                value {
+                    it.value.items
+                }
+                remainingWidth()
+            }
+
+
+            column("Price", Double::class) {
+                value {
+                    it.value.price
+                }
+                remainingWidth()
+            }
+
+            column("Comments", String::class) {
+                value {
+                    it.value.comments
+                }
+                remainingWidth()
+            }
+
+            column("My Rating", Int::class) {
+                value {
+                    it.value.myRating
+                }
+                remainingWidth()
+            }
         }
     }
+}
+
 

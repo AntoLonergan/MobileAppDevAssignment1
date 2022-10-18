@@ -80,7 +80,14 @@ class FoodReviewJSONStore : FoodReviewStore {
     }
 
     internal fun restaurants(){
-        foodReviews.forEach { logger.info(it.name) }
+        val restaurants = mutableListOf<FoodReviewModel>()
+        foodReviews.forEach {
+            restaurants.add(it)
+        }
+        restaurants.sortWith(compareBy { it.myRating })
+        restaurants.forEach{
+            println(it.name)
+        }
     }
 
     internal fun sort() {
@@ -88,9 +95,18 @@ class FoodReviewJSONStore : FoodReviewStore {
         foodReviews.forEach {
             ratings.add(it)
         }
-        ratings.sortWith(compareBy { it.myRating })
-        println(ratings)
+        ratings.sortWith(compareBy { it.name })
+        ratings.forEach{
+            println(it.name)
+        }
     }
 
-
-}
+    internal fun list(): MutableList<FoodReviewModel> {
+        val ratings = mutableListOf<FoodReviewModel>()
+        foodReviews.forEach {
+            ratings.add(it)
+        }
+        ratings.sortWith(compareBy { it.name })
+        return ratings
+    }
+    }
