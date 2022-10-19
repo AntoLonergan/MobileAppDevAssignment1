@@ -113,39 +113,45 @@ class UpdateView : View() {
                     action {
                         val searchId = idString.value
                         val bFoodReview = foodReviewController.search(searchId)
-                        val cFoodReview = FoodReviewModel(
-                            idString.value,
-                            nameString.value, addressString.value, postCodeString.value, justEatRatingString.value,
-                            itemsString.value,
-                            priceString.value,
-                            commentsString.value,
-                            myRatingString.value
-                        )
-                        if (bFoodReview != null && nameString.value != "" && (addressString.value.toString() != "") && (postCodeString.value != "") && (justEatRatingString.value.toString() != "0.0") &&
-                                    (itemsString.value != "") &&
-                                    (priceString.value.toString() != "0.0") &&
-                                    (commentsString.value != "") ||
-                                    (myRatingString.value.toString() != "0")) {
+                        if (bFoodReview != null) {
+                            val cFoodReview = FoodReviewModel(
+                                idString.value,
+                                nameString.value, addressString.value, postCodeString.value, justEatRatingString.value,
+                                itemsString.value,
+                                priceString.value,
+                                commentsString.value,
+                                myRatingString.value
+                            )
+                            if (nameString.value != "" && (addressString.value.toString() != "") && (postCodeString.value != "") && (justEatRatingString.value.toString() != "0.0") &&
+                                (itemsString.value != "") &&
+                                (priceString.value.toString() != "0.0") &&
+                                (commentsString.value != "") ||
+                                (myRatingString.value.toString() != "0")
+                            ) {
 
 
-                            foodReviews.update(cFoodReview)
-                            idField.clear()
-                            nameField.clear()
-                            addressField.clear()
-                            postCodeField.clear()
-                            justEatRatingField.clear()
-                            itemsField.clear()
-                            priceField.clear()
-                            commentsField.clear()
-                            myRatingField.clear()
-                            find<PopUpBox>(params = mapOf("message" to "Update Successful")).openModal()
-                        } else {
-                            find<PopUpBox>(params = mapOf("message" to "Could not Complete Update. Check if Id is valid and fields are properly filled in!")).openModal()
+                                foodReviews.update(cFoodReview)
+                                idField.clear()
+                                nameField.clear()
+                                addressField.clear()
+                                postCodeField.clear()
+                                justEatRatingField.clear()
+                                itemsField.clear()
+                                priceField.clear()
+                                commentsField.clear()
+                                myRatingField.clear()
+                                find<PopUpBox>(params = mapOf("message" to "Update Successful")).openModal()
+                            } else {
+                                find<PopUpBox>(params = mapOf("message" to "Could not Complete Update. Check if Id is valid and fields are properly filled in!")).openModal()
+                            }
+                        }
+                        else {
+                            find<PopUpBox>(params = mapOf("message" to "Could not Complete Update. Check if Id is valid!")).openModal()
                         }
                     }
                 }
             }
-        }
 
+        }
     }
 }
