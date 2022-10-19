@@ -30,6 +30,7 @@ class FoodReviewController {
                 5 -> search()
                 6 -> restaurants()
                 7 -> sort()
+                8 -> filter()
                 -1 -> println("Exiting App")
                 else -> println("Invalid Option")
             }
@@ -93,6 +94,10 @@ class FoodReviewController {
 
     private fun sort(){
         foodReviews.sort()
+    }
+
+    private fun filter(){
+        foodReviews.filter()
     }
 
     private fun search() {

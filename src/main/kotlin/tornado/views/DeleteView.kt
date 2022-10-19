@@ -41,6 +41,7 @@ class DeleteView : View() {
                             val dFoodReview = foodReviewController.search(searchId)
                             if (dFoodReview != null) {
                                 foodReviews.delete(dFoodReview)
+                                foodReviews.serialize()
                                 idField.clear()
                                 find<PopUpBox>(params = mapOf("message" to "Successfully Deleted")).openModal()
                             } else {

@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="More Validation Added to fx">
+    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Added Filter View">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodReviews.json" beforeDir="false" afterPath="$PROJECT_DIR$/foodReviews.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/controllers/FoodReviewController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/controllers/FoodReviewController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewJSONStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewJSONStore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/views/FoodReviewView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/views/FoodReviewView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/app/MyApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/app/MyApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/DeleteView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/DeleteView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/FilteredView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/FilteredView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/ListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/ListView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/MainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/MainView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/SortedView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/SortedView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/UpdateView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/UpdateView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -356,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666146228002</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added Filter View">
+      <created>1666185752269</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1666185752269</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -426,7 +439,8 @@
     <MESSAGE value="Added some validation" />
     <MESSAGE value="Sorted View Added" />
     <MESSAGE value="More Validation Added to fx" />
-    <option name="LAST_COMMIT_MESSAGE" value="More Validation Added to fx" />
+    <MESSAGE value="Added Filter View" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Filter View" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

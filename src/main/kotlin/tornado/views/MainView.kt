@@ -44,14 +44,6 @@ class MainView : View() {
                     }
                 }
 
-                button("Go to Name and ID Only View") {
-                    textFill = Color.RED
-                    action {
-                        replaceWith<FilterdView>()
-                        println("Going to Filtered View")
-                    }
-                }
-
                 }
             }
 

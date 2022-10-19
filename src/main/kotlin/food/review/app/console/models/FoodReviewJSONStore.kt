@@ -69,7 +69,7 @@ class FoodReviewJSONStore : FoodReviewStore {
         foodReviews.forEach { logger.info("$it") }
     }
 
-    private fun serialize() {
+    fun serialize() {
         val jsonString = gsonBuilder.toJson(foodReviews, listType)
         write(JSON_FILE, jsonString)
     }
@@ -118,4 +118,14 @@ class FoodReviewJSONStore : FoodReviewStore {
         ratings.sortWith(compareBy { it.myRating })
         return ratings
     }
+    internal fun filter(): MutableList<FoodReviewModel> {
+        val ratings = mutableListOf<FoodReviewModel>()
+        foodReviews.forEach {
+            ratings.add(it)
+            println("Name: " + it.name + " Id " + it.id)
+        }
+        ratings.sortWith(compareBy { it.name })
+        return ratings
+    }
+
     }

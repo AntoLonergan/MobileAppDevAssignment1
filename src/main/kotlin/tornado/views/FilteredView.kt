@@ -6,8 +6,7 @@ import javafx.scene.paint.Color
 import tornadofx.*
 
 class FilterdView : View() {
-    val foodReviews = FoodReviewJSONStore()
-    val reviews = SortedFilteredList(items = foodReviews.sortedFX().asObservable())
+
     override val root = vbox(50) {
         label("Filtered View") {
             textFill = Color.BLUE
@@ -20,32 +19,42 @@ class FilterdView : View() {
             }
         }
 
+        button("Populate/Refresh") {
+            textFill = Color.RED
+            action {
+                tableview<FoodReviewModel> {
+                    val foodReviews = FoodReviewJSONStore()
+                    val reviews = SortedFilteredList(items = foodReviews.sortedFX().asObservable())
+                    items = reviews
+                    columnResizePolicy = SmartResize.POLICY
 
-        tableview<FoodReviewModel> {
-            items = reviews
-            columnResizePolicy = SmartResize.POLICY
+                    column("ID", Long::class) {
+                        value {
+                            it.value.id
+                        }
+                        remainingWidth()
+                    }
 
-            column("ID", Long::class) {
-                value {
-                    it.value.id
-                }
-                remainingWidth()
+
+                    column("Name", String::class) {
+                        value {
+                            it.value.name
+                        }
+                        remainingWidth()
+                    }
             }
+        }
 
 
-            column("Name", String::class) {
-                value {
-                    it.value.name
+
+
+
                 }
-                remainingWidth()
-            }
-
-            button("Go back to List Views") {
-                textFill = Color.RED
-                action {
-                    replaceWith<ListView>()
-                    println("Going to ListViews!")
-                }
+        button("Go back to List Views") {
+            textFill = Color.RED
+            action {
+                replaceWith<ListView>()
+                println("Going to ListViews!")
             }
         }
     }

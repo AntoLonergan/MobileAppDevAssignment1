@@ -18,6 +18,7 @@ class FoodReviewView {
         println(" 5. Search Reviews")
         println(" 6. Display all Reviewed Restaurants")
         println(" 7. Sort by Ratings")
+        println(" 8. List just Id and Name")
         println("-1. Exit")
         println()
         print("Enter an integer : ")
