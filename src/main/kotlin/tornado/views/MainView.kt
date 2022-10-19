@@ -44,15 +44,16 @@ class MainView : View() {
                     }
                 }
 
-                button("Go to Sorted by Rating View") {
+                button("Go to Name and ID Only View") {
                     textFill = Color.RED
                     action {
-                        replaceWith<SortedView>()
-                        println("Going to Sorted View!")
+                        replaceWith<FilterdView>()
+                        println("Going to Filtered View")
                     }
                 }
+
+                }
             }
-        }
 
 
 

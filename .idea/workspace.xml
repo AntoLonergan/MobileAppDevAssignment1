@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Sorted View Added">
+    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="More Validation Added to fx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodReviews.json" beforeDir="false" afterPath="$PROJECT_DIR$/foodReviews.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/controllers/FoodReviewController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/controllers/FoodReviewController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/helpers/FileHelpers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/helpers/FileHelpers.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/main/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/main/main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewJSONStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewJSONStore.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/views/FoodReviewView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/views/FoodReviewView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/AddView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/AddView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/DeleteView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/DeleteView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/ListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/ListView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/MainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/MainView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/SortedView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/SortedView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/UpdateView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/UpdateView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,18 +91,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "corretto-11",
-    "last_opened_file_path": "C:/Users/Loner/IdeaProjects/FoodReviewApp/mysql-connector-java-8.0.30.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Loner/IdeaProjects/FoodReviewApp/mysql-connector-java-8.0.30.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Loner\IdeaProjects\FoodReviewApp" />
@@ -354,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666139437835</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="More Validation Added to fx">
+      <created>1666146228002</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1666146228002</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -423,7 +425,8 @@
     <MESSAGE value="Update View Tornado working." />
     <MESSAGE value="Added some validation" />
     <MESSAGE value="Sorted View Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorted View Added" />
+    <MESSAGE value="More Validation Added to fx" />
+    <option name="LAST_COMMIT_MESSAGE" value="More Validation Added to fx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

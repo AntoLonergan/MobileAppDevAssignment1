@@ -85,5 +85,12 @@ class SortedView : View() {
                 remainingWidth()
             }
         }
+        button("Go back to List Views") {
+            textFill = Color.RED
+            action {
+                replaceWith<ListView>()
+                println("Going to ListViews!")
+            }
+        }
     }
 }

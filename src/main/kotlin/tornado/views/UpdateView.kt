@@ -113,19 +113,20 @@ class UpdateView : View() {
                     action {
                         val searchId = idString.value
                         val bFoodReview = foodReviewController.search(searchId)
+                        val cFoodReview = FoodReviewModel(
+                            idString.value,
+                            nameString.value, addressString.value, postCodeString.value, justEatRatingString.value,
+                            itemsString.value,
+                            priceString.value,
+                            commentsString.value,
+                            myRatingString.value
+                        )
                         if (bFoodReview != null && nameString.value != "" && (addressString.value.toString() != "") && (postCodeString.value != "") && (justEatRatingString.value.toString() != "0.0") &&
                                     (itemsString.value != "") &&
                                     (priceString.value.toString() != "0.0") &&
                                     (commentsString.value != "") ||
                                     (myRatingString.value.toString() != "0")) {
-                            val cFoodReview = FoodReviewModel(
-                                idString.value,
-                                nameString.value, addressString.value, postCodeString.value, justEatRatingString.value,
-                                itemsString.value,
-                                priceString.value,
-                                commentsString.value,
-                                myRatingString.value
-                            )
+
 
                             foodReviews.update(cFoodReview)
                             idField.clear()

@@ -85,6 +85,15 @@ class ListView : View() {
                 remainingWidth()
             }
         }
+        button("Go to Sorted by Rating View") {
+            textFill = Color.RED
+            action {
+                replaceWith<SortedView>()
+                println("Going to Sorted View!")
+            }
+        }
+
+
     }
 }
 
