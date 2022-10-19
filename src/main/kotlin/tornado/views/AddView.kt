@@ -33,6 +33,7 @@ private var myRatingString = SimpleIntegerProperty()
 
 
 class AddView : View() {
+
     override val root = vbox(60) {
         label("Add View") {
             textFill = Color.BLUE
