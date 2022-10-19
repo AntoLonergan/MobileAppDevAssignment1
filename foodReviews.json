@@ -42,5 +42,203 @@
     "price": 12.5,
     "comments": "Unreal",
     "myRating": 5
+  },
+  {
+    "id": 9126209065989389980,
+    "name": "s",
+    "address": "s",
+    "postCode": "s",
+    "justEatRating": 0.0,
+    "items": "s",
+    "price": 0.0,
+    "comments": "s",
+    "myRating": 0
+  },
+  {
+    "id": 9114603769867510116,
+    "name": "C",
+    "address": "C",
+    "postCode": "C",
+    "justEatRating": 0.0,
+    "items": "C",
+    "price": 0.0,
+    "comments": "C",
+    "myRating": 0
+  },
+  {
+    "id": 3981951467812982855,
+    "name": "",
+    "address": "",
+    "postCode": "",
+    "justEatRating": 0.0,
+    "items": "",
+    "price": 0.0,
+    "comments": "",
+    "myRating": 0
+  },
+  {
+    "id": -3156300592533718289,
+    "name": "",
+    "address": "",
+    "postCode": "",
+    "justEatRating": 0.0,
+    "items": "",
+    "price": 0.0,
+    "comments": "",
+    "myRating": 0
+  },
+  {
+    "id": -413482678930507291,
+    "name": "",
+    "address": "",
+    "postCode": "",
+    "justEatRating": 0.0,
+    "items": "",
+    "price": 0.0,
+    "comments": "",
+    "myRating": 0
+  },
+  {
+    "id": -6377373063566841198,
+    "name": "",
+    "address": "",
+    "postCode": "",
+    "justEatRating": 0.0,
+    "items": "",
+    "price": 0.0,
+    "comments": "",
+    "myRating": 0
+  },
+  {
+    "id": 5198171149131505003,
+    "name": "",
+    "address": "",
+    "postCode": "",
+    "justEatRating": 0.0,
+    "items": "",
+    "price": 0.0,
+    "comments": "",
+    "myRating": 0
+  },
+  {
+    "id": 4650476736187919849,
+    "name": "",
+    "address": "",
+    "postCode": "",
+    "justEatRating": 0.0,
+    "items": "",
+    "price": 0.0,
+    "comments": "",
+    "myRating": 0
+  },
+  {
+    "id": 5009944332044317720,
+    "name": "",
+    "address": "",
+    "postCode": "",
+    "justEatRating": 0.0,
+    "items": "",
+    "price": 0.0,
+    "comments": "",
+    "myRating": 0
+  },
+  {
+    "id": -79063600268073096,
+    "name": "",
+    "address": "",
+    "postCode": "",
+    "justEatRating": 0.0,
+    "items": "",
+    "price": 0.0,
+    "comments": "",
+    "myRating": 0
+  },
+  {
+    "id": -4884014136846560490,
+    "name": "",
+    "address": "",
+    "postCode": "",
+    "justEatRating": 0.0,
+    "items": "",
+    "price": 0.0,
+    "comments": "",
+    "myRating": 0
+  },
+  {
+    "id": 4331175401996569500,
+    "name": "",
+    "address": "",
+    "postCode": "",
+    "justEatRating": 0.0,
+    "items": "",
+    "price": 0.0,
+    "comments": "",
+    "myRating": 0
+  },
+  {
+    "id": 7506934378656161536,
+    "name": "",
+    "address": "",
+    "postCode": "",
+    "justEatRating": 0.0,
+    "items": "",
+    "price": 0.0,
+    "comments": "",
+    "myRating": 0
+  },
+  {
+    "id": -7260328673828613599,
+    "name": "",
+    "address": "",
+    "postCode": "",
+    "justEatRating": 0.0,
+    "items": "",
+    "price": 0.0,
+    "comments": "",
+    "myRating": 0
+  },
+  {
+    "id": -4656015693567739063,
+    "name": "",
+    "address": "",
+    "postCode": "",
+    "justEatRating": 0.0,
+    "items": "",
+    "price": 0.0,
+    "comments": "",
+    "myRating": 0
+  },
+  {
+    "id": -1646400525379720013,
+    "name": "AA",
+    "address": "A",
+    "postCode": "A",
+    "justEatRating": 0.0,
+    "items": "AA",
+    "price": 8.0,
+    "comments": "A",
+    "myRating": 8
+  },
+  {
+    "id": 4686822813408696995,
+    "name": "A",
+    "address": "A",
+    "postCode": "A",
+    "justEatRating": 7.76,
+    "items": "A",
+    "price": 7.56,
+    "comments": "A",
+    "myRating": 2
+  },
+  {
+    "id": 8408364403875494171,
+    "name": "0",
+    "address": "0",
+    "postCode": "0",
+    "justEatRating": 1.0,
+    "items": "0",
+    "price": 1.0,
+    "comments": "0",
+    "myRating": 1
   }
 ]

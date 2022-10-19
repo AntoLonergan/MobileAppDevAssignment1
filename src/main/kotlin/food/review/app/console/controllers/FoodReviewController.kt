@@ -7,9 +7,9 @@ import mu.KotlinLogging
 
 class FoodReviewController {
 
-    val foodReviews = FoodReviewJSONStore()
-    val foodReviewView = FoodReviewView()
-    val logger = KotlinLogging.logger {}
+    private val foodReviews = FoodReviewJSONStore()
+    private val foodReviewView = FoodReviewView()
+    private val logger = KotlinLogging.logger {}
 
 
     init {
@@ -38,10 +38,10 @@ class FoodReviewController {
         logger.info { "Shutting Down Placemark Console App" }
     }
 
-    fun menu() :Int { return foodReviewView.menu() }
+    private fun menu() :Int { return foodReviewView.menu() }
 
-    fun add(){
-        var aFoodReview = FoodReviewModel()
+    private fun add(){
+        val aFoodReview = FoodReviewModel()
 
         if (foodReviewView.addFoodReviewData(aFoodReview))
             foodReviews.create(aFoodReview)
@@ -49,14 +49,14 @@ class FoodReviewController {
             logger.info("Food Review Not Added")
     }
 
-    fun list() {
+    private fun list() {
         foodReviewView.listFoodReviews(foodReviews)
     }
 
-    fun update() {
+    private fun update() {
 
         foodReviewView.listFoodReviews(foodReviews)
-        var searchId = foodReviewView.getId()
+        val searchId = foodReviewView.getId()
         val aFoodReview = search(searchId)
 
         if(aFoodReview != null) {
@@ -72,9 +72,9 @@ class FoodReviewController {
             println("Food Review Not Updated...")
     }
 
-    fun delete() {
+    private fun delete() {
         foodReviewView.listFoodReviews(foodReviews)
-        var searchId = foodReviewView.getId()
+        val searchId = foodReviewView.getId()
         val aFoodReview = search(searchId)
 
         if(aFoodReview != null) {
@@ -87,23 +87,22 @@ class FoodReviewController {
     }
 
 
-    fun restaurants(){
+    private fun restaurants(){
         foodReviews.restaurants()
     }
 
-    fun sort(){
+    private fun sort(){
         foodReviews.sort()
     }
 
-    fun search() {
+    private fun search() {
         val aFoodReview = search(foodReviewView.getId())!!
         foodReviewView.showFoodReviews(aFoodReview)
     }
 
 
-    fun search(id: Long) : FoodReviewModel? {
-        var foundFoodReviews = foodReviews.findOne(id)
-        return foundFoodReviews
+    fun search(id: Long): FoodReviewModel? {
+        return foodReviews.findOne(id)
     }
 
 }

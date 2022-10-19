@@ -1,10 +1,10 @@
 package tornado.views
 
-import tornado.helpers.PopUpBox
 import food.review.app.console.models.FoodReviewJSONStore
 import javafx.beans.property.SimpleLongProperty
 import javafx.scene.control.TextField
 import javafx.scene.paint.Color
+import tornado.helpers.PopUpBox
 import tornadofx.*
 
 private var idField: TextField by singleAssign()
@@ -37,19 +37,19 @@ class DeleteView : View() {
 
                 button("Delete") {
                     action {
-                        val searchId = idString.value
-                        val dFoodReview = foodReviewController.search(searchId)
-                        if (dFoodReview != null) {
-                            foodReviews.delete(dFoodReview)
-                            idField.clear()
-                            find<PopUpBox>(params = mapOf("message" to "Successfully Deleted")).openModal()
-                        }
-                        else {
-                            find<PopUpBox>(params = mapOf("message" to "Could not Complete Deletion")).openModal()
+                            val searchId = idString.value
+                            val dFoodReview = foodReviewController.search(searchId)
+                            if (dFoodReview != null) {
+                                foodReviews.delete(dFoodReview)
+                                idField.clear()
+                                find<PopUpBox>(params = mapOf("message" to "Successfully Deleted")).openModal()
+                            } else {
+                                idField.clear()
+                                find<PopUpBox>(params = mapOf("message" to "Could not Complete Deletion Make Sure Valid Number was Input!")).openModal()
+                            }
                         }
                     }
                 }
             }
-        }
     }
 }

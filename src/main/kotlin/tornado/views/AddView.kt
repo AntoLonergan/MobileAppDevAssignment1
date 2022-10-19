@@ -31,6 +31,7 @@ private var commentsString = SimpleStringProperty()
 private var myRatingString = SimpleIntegerProperty()
 
 
+
 class AddView : View() {
     override val root = vbox(60) {
         label("Add View") {
@@ -89,34 +90,55 @@ class AddView : View() {
                     promptText = "e.g 9"
                 }
 
-                priceField.clear()
-                myRatingField.clear()
+
+                nameField.clear()
+                addressField.clear()
+                postCodeField.clear()
                 justEatRatingField.clear()
+                itemsField.clear()
+                priceField.clear()
+                commentsField.clear()
+                myRatingField.clear()
+
                 button("Add") {
                     action {
                         val aFoodReview = FoodReviewModel(
                             0,
-                            nameString.value, addressString.value, postCodeString.value, justEatRatingString.value,
+                            nameString.value,
+                            addressString.value,
+                            postCodeString.value,
+                            justEatRatingString.value,
                             itemsString.value,
                             priceString.value,
                             commentsString.value,
                             myRatingString.value
                         )
-                        foodReviews.create(aFoodReview)
-                        nameField.clear()
-                        addressField.clear()
-                        postCodeField.clear()
-                        justEatRatingField.clear()
-                        itemsField.clear()
-                        priceField.clear()
-                        commentsField.clear()
-                        myRatingField.clear()
-                        find<PopUpBox>(params = mapOf("message" to "Add Successful!")).openModal()
+                        if (nameString.value != "" && (addressString.value.toString() != "") && (postCodeString.value != "") && (justEatRatingString.value.toString() != "0.0") &&
+                            (itemsString.value != "") &&
+                            (priceString.value.toString() != "0.0") &&
+                            (commentsString.value != "") ||
+                            (myRatingString.value.toString() != "0")
+                        ) {
+                            foodReviews.create(aFoodReview)
+                            nameField.clear()
+                            addressField.clear()
+                            postCodeField.clear()
+                            justEatRatingField.clear()
+                            itemsField.clear()
+                            priceField.clear()
+                            commentsField.clear()
+                            myRatingField.clear()
+                            find<PopUpBox>(params = mapOf("message" to "Add Successful!")).openModal()
+                        } else {
+                            find<PopUpBox>(params = mapOf("message" to "Add UnSuccessful Please check all Fields are Filled Properly!")).openModal()
+                        }
                     }
                 }
             }
         }
     }
 }
+
+
 
 

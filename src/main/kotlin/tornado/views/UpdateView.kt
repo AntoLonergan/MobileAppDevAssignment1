@@ -1,6 +1,5 @@
 package tornado.views
 
-import tornado.helpers.PopUpBox
 import food.review.app.console.controllers.FoodReviewController
 import food.review.app.console.models.FoodReviewJSONStore
 import food.review.app.console.models.FoodReviewModel
@@ -10,6 +9,7 @@ import javafx.beans.property.SimpleLongProperty
 import javafx.beans.property.SimpleStringProperty
 import javafx.scene.control.TextField
 import javafx.scene.paint.Color
+import tornado.helpers.PopUpBox
 import tornadofx.*
 
 
@@ -100,15 +100,24 @@ class UpdateView : View() {
                     promptText = "e.g 9"
                 }
 
-                priceField.clear()
-                myRatingField.clear()
+                nameField.clear()
+                addressField.clear()
+                postCodeField.clear()
                 justEatRatingField.clear()
+                itemsField.clear()
+                priceField.clear()
+                commentsField.clear()
+                myRatingField.clear()
                 idField.clear()
                 button("Update") {
                     action {
                         val searchId = idString.value
                         val bFoodReview = foodReviewController.search(searchId)
-                        if (bFoodReview != null) {
+                        if (bFoodReview != null && nameString.value != "" && (addressString.value.toString() != "") && (postCodeString.value != "") && (justEatRatingString.value.toString() != "0.0") &&
+                                    (itemsString.value != "") &&
+                                    (priceString.value.toString() != "0.0") &&
+                                    (commentsString.value != "") ||
+                                    (myRatingString.value.toString() != "0")) {
                             val cFoodReview = FoodReviewModel(
                                 idString.value,
                                 nameString.value, addressString.value, postCodeString.value, justEatRatingString.value,
@@ -117,6 +126,7 @@ class UpdateView : View() {
                                 commentsString.value,
                                 myRatingString.value
                             )
+
                             foodReviews.update(cFoodReview)
                             idField.clear()
                             nameField.clear()
@@ -129,7 +139,7 @@ class UpdateView : View() {
                             myRatingField.clear()
                             find<PopUpBox>(params = mapOf("message" to "Update Successful")).openModal()
                         } else {
-                            find<PopUpBox>(params = mapOf("message" to "Could not Complete Update")).openModal()
+                            find<PopUpBox>(params = mapOf("message" to "Could not Complete Update. Check if Id is valid and fields are properly filled in!")).openModal()
                         }
                     }
                 }

@@ -6,8 +6,8 @@ import food.review.app.console.models.FoodReviewModel
 class FoodReviewView {
     fun menu(): Int {
 
-        var option: Int
-        var input: String? = null
+        val option: Int
+        val input: String?
         println()
 
         println("Main Menu")
@@ -23,7 +23,7 @@ class FoodReviewView {
         print("Enter an integer : ")
 
         input = readLine()!!
-        option = if (input.toIntOrNull() != null && !input.isEmpty())
+        option = if (input.toIntOrNull() != null && input.isNotEmpty())
             input.toInt()
         else
             -9
@@ -120,8 +120,8 @@ class FoodReviewView {
     }
 
     fun getId() : Long {
-        var strId : String? // String to hold user input
-        var searchId : Long // Long to hold converted id
+        val strId : String? // String to hold user input
+        val searchId : Long // Long to hold converted id
         print("Enter id to Search/Update : ")
         strId = readLine()!!
         searchId = if (strId.toLongOrNull() != null && !strId.isEmpty())

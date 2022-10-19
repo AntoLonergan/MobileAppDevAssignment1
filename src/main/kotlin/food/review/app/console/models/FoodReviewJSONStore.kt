@@ -7,13 +7,14 @@ import food.review.app.console.helpers.exists
 import food.review.app.console.helpers.read
 import food.review.app.console.helpers.write
 import mu.KotlinLogging
+import java.lang.reflect.Type
 import java.util.*
 
 private val logger = KotlinLogging.logger {}
 
-val JSON_FILE = "foodReviews.json"
-val gsonBuilder = GsonBuilder().setPrettyPrinting().create()
-val listType = object : TypeToken<java.util.ArrayList<FoodReviewModel>>() {}.type
+const val JSON_FILE = "foodReviews.json"
+val gsonBuilder: Gson = GsonBuilder().setPrettyPrinting().create()
+val listType: Type = object : TypeToken<ArrayList<FoodReviewModel>>() {}.type
 
 fun generateRandomId(): Long {
     return Random().nextLong()
