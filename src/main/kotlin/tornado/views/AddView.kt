@@ -1,6 +1,5 @@
 package tornado.views
 
-import com.example.utils.PopUpBox
 import food.review.app.console.models.FoodReviewJSONStore
 import food.review.app.console.models.FoodReviewModel
 import javafx.beans.property.SimpleDoubleProperty
@@ -8,6 +7,7 @@ import javafx.beans.property.SimpleIntegerProperty
 import javafx.beans.property.SimpleStringProperty
 import javafx.scene.control.TextField
 import javafx.scene.paint.Color
+import tornado.helpers.PopUpBox
 import tornadofx.*
 
 private var nameField: TextField by singleAssign()

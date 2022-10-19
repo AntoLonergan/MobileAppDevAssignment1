@@ -1,6 +1,6 @@
 package tornado.views
 
-import com.example.utils.PopUpBox
+import tornado.helpers.PopUpBox
 import food.review.app.console.controllers.FoodReviewController
 import food.review.app.console.models.FoodReviewJSONStore
 import food.review.app.console.models.FoodReviewModel
@@ -106,7 +106,7 @@ class UpdateView : View() {
                 idField.clear()
                 button("Update") {
                     action {
-                        var searchId = idString.value
+                        val searchId = idString.value
                         val bFoodReview = foodReviewController.search(searchId)
                         if (bFoodReview != null) {
                             val cFoodReview = FoodReviewModel(

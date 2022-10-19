@@ -22,127 +22,6 @@
     "myRating": 8
   },
   {
-    "id": -7194049315705240223,
-    "name": "StringProperty [value: Test]",
-    "address": "StringProperty [value: fmsl;ms]",
-    "postCode": "StringProperty [value: dfs]",
-    "justEatRating": 0.0,
-    "items": "StringProperty [value: sdfs]",
-    "price": 0.0,
-    "comments": "StringProperty [value: sfs]",
-    "myRating": 0
-  },
-  {
-    "id": 6639239569821090848,
-    "name": "StringProperty [value: Test]",
-    "address": "StringProperty [value: fmsl;ms]",
-    "postCode": "StringProperty [value: dfs]",
-    "justEatRating": 0.0,
-    "items": "StringProperty [value: sdfs]",
-    "price": 0.0,
-    "comments": "StringProperty [value: sfs]",
-    "myRating": 0
-  },
-  {
-    "id": 413324588380506350,
-    "name": "StringProperty [value: Test]",
-    "address": "StringProperty [value: fmsl;ms]",
-    "postCode": "StringProperty [value: dfs]",
-    "justEatRating": 0.0,
-    "items": "StringProperty [value: sdfs]",
-    "price": 0.0,
-    "comments": "StringProperty [value: sfs]",
-    "myRating": 0
-  },
-  {
-    "id": -2584511383706913809,
-    "name": "StringProperty [value: Test]",
-    "address": "StringProperty [value: dsfs]",
-    "postCode": "StringProperty [value: dsfds]",
-    "justEatRating": 0.0,
-    "items": "StringProperty [value: dsfsf]",
-    "price": 0.0,
-    "comments": "StringProperty [value: sdfsf]",
-    "myRating": 0
-  },
-  {
-    "id": -12590116869524976,
-    "name": "",
-    "address": "",
-    "postCode": "",
-    "justEatRating": 0.0,
-    "items": "",
-    "price": 0.0,
-    "comments": "",
-    "myRating": 0
-  },
-  {
-    "id": -2989242062638933921,
-    "name": "StringProperty [value: Test]",
-    "address": "StringProperty [value: Test]",
-    "postCode": "StringProperty [value: Test]",
-    "justEatRating": 0.0,
-    "items": "StringProperty [value: Test]",
-    "price": 0.0,
-    "comments": "StringProperty [value: Test]",
-    "myRating": 0
-  },
-  {
-    "id": 4644318357035274355,
-    "name": "StringProperty [value: Test]",
-    "address": "StringProperty [value: Test]",
-    "postCode": "StringProperty [value: Test]",
-    "justEatRating": 0.0,
-    "items": "StringProperty [value: Test]",
-    "price": 0.0,
-    "comments": "StringProperty [value: Test]",
-    "myRating": 0
-  },
-  {
-    "id": 2805519447221684841,
-    "name": "StringProperty [value: Test]",
-    "address": "StringProperty [value: Test]",
-    "postCode": "StringProperty [value: Test]",
-    "justEatRating": 0.0,
-    "items": "StringProperty [value: Test]",
-    "price": 0.0,
-    "comments": "StringProperty [value: Test]",
-    "myRating": 0
-  },
-  {
-    "id": 4289510439010206229,
-    "name": "StringProperty [value: Test]",
-    "address": "StringProperty [value: Test]",
-    "postCode": "StringProperty [value: Test]",
-    "justEatRating": 0.0,
-    "items": "StringProperty [value: Test]",
-    "price": 0.0,
-    "comments": "StringProperty [value: Test]",
-    "myRating": 0
-  },
-  {
-    "id": 375061067451781295,
-    "name": "1",
-    "address": "1",
-    "postCode": "11",
-    "justEatRating": 1.0,
-    "items": "1",
-    "price": 1.0,
-    "comments": "1",
-    "myRating": 1
-  },
-  {
-    "id": -7330175368603503678,
-    "name": "a",
-    "address": "a",
-    "postCode": "a",
-    "justEatRating": 0.0,
-    "items": "a",
-    "price": 0.0,
-    "comments": "a",
-    "myRating": 0
-  },
-  {
     "id": -2656064228614203321,
     "name": "Pink\u0027s",
     "address": "Waterford",
@@ -152,5 +31,16 @@
     "price": 4.55,
     "comments": "Good",
     "myRating": 8
+  },
+  {
+    "id": 1333095227597070491,
+    "name": "Geoffs",
+    "address": "Wexford",
+    "postCode": "X42y21",
+    "justEatRating": 9.9,
+    "items": "Wings",
+    "price": 12.5,
+    "comments": "Unreal",
+    "myRating": 5
   }
 ]

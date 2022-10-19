@@ -1,9 +1,9 @@
-package com.example.utils
+package tornado.helpers
 
 import tornadofx.*
 
 class PopUpBox : Fragment(){
-    val message: String by param()
+    private val message: String by param()
     override val root = vbox {
 
         label(message){

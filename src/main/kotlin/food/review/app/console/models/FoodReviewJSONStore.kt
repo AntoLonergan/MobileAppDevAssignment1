@@ -33,9 +33,8 @@ class FoodReviewJSONStore : FoodReviewStore {
         return foodReviews
     }
 
-    override fun findOne(id: Long) : FoodReviewModel? {
-        var foundFoodReview: FoodReviewModel? = foodReviews.find { p -> p.id == id }
-        return foundFoodReview
+    override fun findOne(id: Long): FoodReviewModel? {
+        return foodReviews.find { p -> p.id == id }
     }
 
     override fun create(foodReview: FoodReviewModel) {
@@ -66,7 +65,7 @@ class FoodReviewJSONStore : FoodReviewStore {
 
 
     internal fun logAll() {
-        foodReviews.forEach { logger.info("${it}") }
+        foodReviews.forEach { logger.info("$it") }
     }
 
     private fun serialize() {
@@ -107,6 +106,15 @@ class FoodReviewJSONStore : FoodReviewStore {
             ratings.add(it)
         }
         ratings.sortWith(compareBy { it.name })
+        return ratings
+    }
+
+    internal fun sortedFX(): MutableList<FoodReviewModel> {
+        val ratings = mutableListOf<FoodReviewModel>()
+        foodReviews.forEach {
+            ratings.add(it)
+        }
+        ratings.sortWith(compareBy { it.myRating })
         return ratings
     }
     }

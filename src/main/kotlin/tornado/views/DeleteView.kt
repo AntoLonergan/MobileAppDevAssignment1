@@ -1,6 +1,6 @@
 package tornado.views
 
-import com.example.utils.PopUpBox
+import tornado.helpers.PopUpBox
 import food.review.app.console.models.FoodReviewJSONStore
 import javafx.beans.property.SimpleLongProperty
 import javafx.scene.control.TextField

@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Update View Tornado working.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodReviews.json" beforeDir="false" afterPath="$PROJECT_DIR$/foodReviews.json" afterDir="false" />
+    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Added some validation">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewJSONStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/food/review/app/console/models/FoodReviewJSONStore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/helpers/PopUpBox.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/helpers/PopUpBox.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/AddView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/AddView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/DeleteView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/DeleteView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/ListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/ListView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/UpdateView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/UpdateView.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -335,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666120849130</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added some validation">
+      <created>1666138625766</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1666138625766</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -402,7 +410,8 @@
     <MESSAGE value="List View Tornado working." />
     <MESSAGE value="Add View Tornado working." />
     <MESSAGE value="Update View Tornado working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update View Tornado working." />
+    <MESSAGE value="Added some validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some validation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,9 +5,9 @@ import food.review.app.console.models.FoodReviewModel
 import javafx.scene.paint.Color
 import tornadofx.*
 
-class ListView : View() {
-    private val foodReviews = FoodReviewJSONStore()
-    private val reviews = SortedFilteredList(items = foodReviews.list().asObservable())
+class SortedView : View() {
+    val foodReviews = FoodReviewJSONStore()
+    val reviews = SortedFilteredList(items = foodReviews.sortedFX().asObservable())
     override val root = vbox(50) {
         label("List View") {
             textFill = Color.BLUE
@@ -87,5 +87,3 @@ class ListView : View() {
         }
     }
 }
-
-
