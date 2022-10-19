@@ -1,5 +1,6 @@
 package tornado.views
 
+import com.example.utils.PopUpBox
 import food.review.app.console.models.FoodReviewJSONStore
 import food.review.app.console.models.FoodReviewModel
 import javafx.beans.property.SimpleDoubleProperty
@@ -9,17 +10,15 @@ import javafx.scene.control.TextField
 import javafx.scene.paint.Color
 import tornadofx.*
 
-var nameField: TextField by singleAssign()
-var addressField: TextField by singleAssign()
-var postCodeField: TextField by singleAssign()
-var justEatRatingField: TextField by singleAssign()
-var itemsField: TextField by singleAssign()
-var priceField: TextField by singleAssign()
-var commentsField: TextField by singleAssign()
-var myRatingField: TextField by singleAssign()
-val foodReviews = FoodReviewJSONStore()
-
-
+private var nameField: TextField by singleAssign()
+private var addressField: TextField by singleAssign()
+private var postCodeField: TextField by singleAssign()
+private var justEatRatingField: TextField by singleAssign()
+private var itemsField: TextField by singleAssign()
+private var priceField: TextField by singleAssign()
+private var commentsField: TextField by singleAssign()
+private var myRatingField: TextField by singleAssign()
+private val foodReviews = FoodReviewJSONStore()
 
 
 private var nameString = SimpleStringProperty()
@@ -30,9 +29,6 @@ private var itemsString = SimpleStringProperty()
 private var priceString = SimpleDoubleProperty()
 private var commentsString = SimpleStringProperty()
 private var myRatingString = SimpleIntegerProperty()
-
-
-
 
 
 class AddView : View() {
@@ -92,20 +88,35 @@ class AddView : View() {
                 myRatingField = textfield(myRatingString) {
                     promptText = "e.g 9"
                 }
+
+                priceField.clear()
+                myRatingField.clear()
+                justEatRatingField.clear()
                 button("Add") {
                     action {
-                        val aFoodReview = FoodReviewModel(0,
+                        val aFoodReview = FoodReviewModel(
+                            0,
                             nameString.value, addressString.value, postCodeString.value, justEatRatingString.value,
                             itemsString.value,
                             priceString.value,
                             commentsString.value,
-                            myRatingString.value)
-                            foodReviews.create(aFoodReview)
+                            myRatingString.value
+                        )
+                        foodReviews.create(aFoodReview)
+                        nameField.clear()
+                        addressField.clear()
+                        postCodeField.clear()
+                        justEatRatingField.clear()
+                        itemsField.clear()
+                        priceField.clear()
+                        commentsField.clear()
+                        myRatingField.clear()
+                        find<PopUpBox>(params = mapOf("message" to "Add Successful!")).openModal()
                     }
-                    }
-                }
                 }
             }
         }
+    }
+}
 
 

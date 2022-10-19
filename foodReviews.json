@@ -11,17 +11,6 @@
     "myRating": 1
   },
   {
-    "id": 9184835607480480798,
-    "name": "a",
-    "address": "a",
-    "postCode": "a",
-    "justEatRating": 0.0,
-    "items": "a",
-    "price": 0.0,
-    "comments": "a",
-    "myRating": 0
-  },
-  {
     "id": -3586500837512311458,
     "name": "Supermacs",
     "address": "Wexford",
@@ -31,17 +20,6 @@
     "price": 11.65,
     "comments": "Great",
     "myRating": 8
-  },
-  {
-    "id": -6238039839764318162,
-    "name": "r",
-    "address": "e",
-    "postCode": "e",
-    "justEatRating": 0.0,
-    "items": "w",
-    "price": 0.0,
-    "comments": "w",
-    "myRating": 0
   },
   {
     "id": -7194049315705240223,
@@ -144,112 +122,35 @@
   },
   {
     "id": 375061067451781295,
-    "name": "Tesst",
-    "address": "StringProperty [value: Test]",
-    "postCode": "StringProperty [value: Test]",
-    "justEatRating": 0.0,
-    "items": "Test",
-    "price": 0.0,
-    "comments": "StringProperty [value: Test]",
-    "myRating": 0
+    "name": "1",
+    "address": "1",
+    "postCode": "11",
+    "justEatRating": 1.0,
+    "items": "1",
+    "price": 1.0,
+    "comments": "1",
+    "myRating": 1
   },
   {
     "id": -7330175368603503678,
-    "name": "Tesst",
-    "address": "StringProperty [value: Test]",
-    "postCode": "StringProperty [value: Test]",
+    "name": "a",
+    "address": "a",
+    "postCode": "a",
     "justEatRating": 0.0,
-    "items": "Test",
+    "items": "a",
     "price": 0.0,
-    "comments": "StringProperty [value: Test]",
+    "comments": "a",
     "myRating": 0
   },
   {
-    "id": 4239610906905594483,
-    "name": "Tester",
-    "address": "Tester",
-    "postCode": "Tester",
-    "justEatRating": 0.0,
-    "items": "Tester",
-    "price": 0.0,
-    "comments": "Tester",
-    "myRating": 0
-  },
-  {
-    "id": -2668238479474608645,
-    "name": "Tester",
-    "address": "Tester",
-    "postCode": "Tester",
-    "justEatRating": 7.0,
-    "items": "Tester",
-    "price": 7.0,
-    "comments": "Tester",
-    "myRating": 7
-  },
-  {
-    "id": 4524387852084044973,
-    "name": "Tester",
-    "address": "Tester",
-    "postCode": "Tester",
-    "justEatRating": 7.0,
-    "items": "Tester",
-    "price": 7.0,
-    "comments": "Tester",
-    "myRating": 7
-  },
-  {
-    "id": 3877700073775045691,
-    "name": "Tester",
-    "address": "Tester",
-    "postCode": "Tester",
-    "justEatRating": 7.0,
-    "items": "Tester",
-    "price": 7.0,
-    "comments": "Tester",
-    "myRating": 7
-  },
-  {
-    "id": -3020436167128330814,
-    "name": "T",
-    "address": "T",
-    "postCode": "T",
-    "justEatRating": 7.0,
-    "items": "T",
-    "price": 8.0,
-    "comments": "T",
-    "myRating": 2
-  },
-  {
-    "id": 5129920251189512692,
-    "name": "T",
-    "address": "T",
-    "postCode": "T",
-    "justEatRating": 7.0,
-    "items": "T",
-    "price": 8.0,
-    "comments": "T",
-    "myRating": 2
-  },
-  {
-    "id": -8875740835831134652,
-    "name": "T",
-    "address": "T",
-    "postCode": "T",
-    "justEatRating": 7.0,
-    "items": "T",
-    "price": 8.0,
-    "comments": "T",
-    "myRating": 2
-  },
-  {
-    "id": -5369010308403371990,
-    "name": "A",
-    "address": "A",
-    "postCode": "A",
-    "justEatRating": 2.0,
-    "items": "A",
-    "price": 2.0,
-    "comments": "A",
-    "myRating": 0
+    "id": -2656064228614203321,
+    "name": "Pink\u0027s",
+    "address": "Waterford",
+    "postCode": "X437278",
+    "justEatRating": 4.33,
+    "items": "Wings",
+    "price": 4.55,
+    "comments": "Good",
+    "myRating": 8
   }
 ]

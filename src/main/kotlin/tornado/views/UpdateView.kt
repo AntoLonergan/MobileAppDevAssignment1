@@ -1,8 +1,9 @@
 package tornado.views
 
+import com.example.utils.PopUpBox
 import food.review.app.console.controllers.FoodReviewController
+import food.review.app.console.models.FoodReviewJSONStore
 import food.review.app.console.models.FoodReviewModel
-import food.review.app.console.views.FoodReviewView
 import javafx.beans.property.SimpleDoubleProperty
 import javafx.beans.property.SimpleIntegerProperty
 import javafx.beans.property.SimpleLongProperty
@@ -15,7 +16,17 @@ import tornadofx.*
 val foodReviewController = FoodReviewController()
 
 
-var idField: TextField by singleAssign()
+private var nameField: TextField by singleAssign()
+private var addressField: TextField by singleAssign()
+private var postCodeField: TextField by singleAssign()
+private var justEatRatingField: TextField by singleAssign()
+private var itemsField: TextField by singleAssign()
+private var priceField: TextField by singleAssign()
+private var commentsField: TextField by singleAssign()
+private var myRatingField: TextField by singleAssign()
+private val foodReviews = FoodReviewJSONStore()
+
+private var idField: TextField by singleAssign()
 private var idString = SimpleLongProperty()
 private var nameString = SimpleStringProperty()
 private var addressString = SimpleStringProperty()
@@ -88,6 +99,11 @@ class UpdateView : View() {
                 myRatingField = textfield(myRatingString) {
                     promptText = "e.g 9"
                 }
+
+                priceField.clear()
+                myRatingField.clear()
+                justEatRatingField.clear()
+                idField.clear()
                 button("Update") {
                     action {
                         var searchId = idString.value
@@ -102,8 +118,18 @@ class UpdateView : View() {
                                 myRatingString.value
                             )
                             foodReviews.update(cFoodReview)
+                            idField.clear()
+                            nameField.clear()
+                            addressField.clear()
+                            postCodeField.clear()
+                            justEatRatingField.clear()
+                            itemsField.clear()
+                            priceField.clear()
+                            commentsField.clear()
+                            myRatingField.clear()
+                            find<PopUpBox>(params = mapOf("message" to "Update Successful")).openModal()
                         } else {
-                            println("Failed")
+                            find<PopUpBox>(params = mapOf("message" to "Could not Complete Update")).openModal()
                         }
                     }
                 }
