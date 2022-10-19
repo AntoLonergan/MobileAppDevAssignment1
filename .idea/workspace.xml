@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Some final Validation and Refreshing added.">
+    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Update View Bug fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodReviews.json" beforeDir="false" afterPath="$PROJECT_DIR$/foodReviews.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tornado/views/UpdateView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tornado/views/UpdateView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobileassign1.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "corretto-11",
-    "last_opened_file_path": "C:/Users/Loner/IdeaProjects/FoodReviewApp",
+    "last_opened_file_path": "C:/Users/Loner/Downloads",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -368,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666200743377</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Update View Bug fixed">
+      <created>1666204890576</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1666204890576</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,7 +422,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Blank Assignment" />
     <MESSAGE value="Simple Main." />
     <MESSAGE value="Simple Main and test of git." />
     <MESSAGE value="Very Basic Menu." />
@@ -440,7 +446,8 @@
     <MESSAGE value="More Validation Added to fx" />
     <MESSAGE value="Added Filter View" />
     <MESSAGE value="Some final Validation and Refreshing added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Some final Validation and Refreshing added." />
+    <MESSAGE value="Update View Bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update View Bug fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

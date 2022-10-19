@@ -34,13 +34,24 @@
   },
   {
     "id": -2730425984956748273,
-    "name": "Test",
-    "address": "Test",
-    "postCode": "Test",
-    "justEatRating": 7.75,
-    "items": "Test",
-    "price": 7.0,
-    "comments": "Test",
-    "myRating": 8
+    "name": "KFC",
+    "address": "Cork",
+    "postCode": "xwe432",
+    "justEatRating": 1.56,
+    "items": "Burger",
+    "price": 4.0,
+    "comments": "Burger",
+    "myRating": 0
+  },
+  {
+    "id": -8286410172087517203,
+    "name": "Mcdonalds",
+    "address": "Waterford",
+    "postCode": "X4Dywq",
+    "justEatRating": 7.0,
+    "items": "Burger",
+    "price": 7.66,
+    "comments": "Good",
+    "myRating": 6
   }
 ]
