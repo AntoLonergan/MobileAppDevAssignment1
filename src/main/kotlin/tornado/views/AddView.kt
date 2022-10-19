@@ -116,7 +116,7 @@ class AddView : View() {
                         if (nameString.value != "" && (addressString.value.toString() != "") && (postCodeString.value != "") && (justEatRatingString.value.toString() != "0.0") &&
                             (itemsString.value != "") &&
                             (priceString.value.toString() != "0.0") &&
-                            (commentsString.value != "") ||
+                            (commentsString.value != "") &&
                             (myRatingString.value.toString() != "0")
                         ) {
                             foodReviews.create(aFoodReview)

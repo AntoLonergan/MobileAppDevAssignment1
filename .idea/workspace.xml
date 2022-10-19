@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Update View Bug fixed">
+    <list default="true" id="1eb3be0b-99e4-4705-8849-1a860ae76e87" name="Changes" comment="Update View Bug fixed again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodReviews.json" beforeDir="false" afterPath="$PROJECT_DIR$/foodReviews.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobileassign1.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,7 +373,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666204890576</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Update View Bug fixed again">
+      <created>1666205729008</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1666205729008</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Update View Bug fixed again">
+      <created>1666205926971</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1666205926971</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -422,7 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Simple Main." />
     <MESSAGE value="Simple Main and test of git." />
     <MESSAGE value="Very Basic Menu." />
     <MESSAGE value="Function Replacing prints in Menu." />
@@ -447,7 +458,8 @@
     <MESSAGE value="Added Filter View" />
     <MESSAGE value="Some final Validation and Refreshing added." />
     <MESSAGE value="Update View Bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update View Bug fixed" />
+    <MESSAGE value="Update View Bug fixed again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update View Bug fixed again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
