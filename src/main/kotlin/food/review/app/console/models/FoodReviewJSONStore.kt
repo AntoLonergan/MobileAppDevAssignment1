@@ -114,6 +114,7 @@ class FoodReviewJSONStore : FoodReviewStore {
         val ratings = mutableListOf<FoodReviewModel>()
         foodReviews.forEach {
             ratings.add(it)
+
         }
         ratings.sortWith(compareBy { it.myRating })
         return ratings

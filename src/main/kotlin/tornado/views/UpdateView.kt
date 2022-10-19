@@ -129,7 +129,6 @@ class UpdateView : View() {
                                 (myRatingString.value.toString() != "0")
                             ) {
 
-
                                 foodReviews.update(cFoodReview)
                                 idField.clear()
                                 nameField.clear()
